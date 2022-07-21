@@ -9,32 +9,101 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.h 
+ * @brief Declarations for numerous statistics functions
  *
- * <Add Extended Description Here>
+ * This header contains declarations for the basic statistics functions in the W1 excercise
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Max Romanov
+ * @date 21-Jul-2022
  *
  */
 #ifndef __STATS_H__
 #define __STATS_H__
 
-/* Add Your Declarations and Function Comments here */ 
+/**
+ * @brief A function that prints the statistics of an array
+ * 
+ * This function receives as input a pointer to the array, and its length and prints 
+ * out median, mean, maximum and minimum
+ *
+ * @param array pointer to the array
+ * @param length the length of the array
+ *
+ * @return None
+ */
+void print_statistics(unsigned char * array, unsigned int length);
 
 /**
- * @brief <Add Brief Description of Function Here>
+ * @brief Prints the array to the screen
  *
- * <Add Extended Description Here>
+ * Given a pointer to the array and its length, the function prints the array to the screen
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
+ * @param @param array pointer to the array
+ * @param length the length of the array
  *
- * @return <Add Return Informaiton here>
+ * @return None
  */
+void print_array(unsigned char * array, unsigned int length);
 
+/**
+ * @brief Finds the array's median
+ *
+ * Given a pointer to the array and its length, the function returns the array's median
+ *
+ * @param @param array pointer to the array
+ * @param length the length of the array
+ *
+ * @return The median of the array as unsinged char
+ */
+unsigned char find_median(unsigned char * array, unsigned int length);
+
+/**
+ * @brief Finds the array's mean
+ *
+ * Given a pointer to the array and its length, the function returns the array's mean
+ *
+ * @param @param array pointer to the array
+ * @param length the length of the array
+ *
+ * @return The mean of the array as float
+ */
+float find_mean(unsigned char * array, unsigned int length);
+
+/**
+ * @brief Finds the array's maximum
+ *
+ * Given a pointer to the array and its length, the function returns the array's maximum value
+ *
+ * @param @param array pointer to the array
+ * @param length the length of the array
+ *
+ * @return The max value of the array as unsinged char
+ */
+unsigned char find_maximum(unsigned char * array, unsigned int length);
+
+/**
+ * @brief Finds the array's minimum
+ *
+ * Given a pointer to the array and its length, the function returns the array's minimum value
+ *
+ * @param @param array pointer to the array
+ * @param length the length of the array
+ *
+ * @return The min value of the array as unsinged char
+ */
+unsigned char find_minimum(unsigned char * array, unsigned int length);
+
+/**
+ * @brief Sorts the array in descending order
+ *
+ * Given a pointer to the array and its length, the function sorts the array from largest to smallest elements
+ *
+ * @param @param array pointer to the array
+ * @param length the length of the array
+ *
+ * @return None
+ */
+void sort_array(unsigned char * array, unsigned int length);
 
 #endif /* __STATS_H__ */

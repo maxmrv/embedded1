@@ -9,8 +9,8 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.c
+ * @brief Various statistic functions implementation and basic usage
  *
  * <Add Extended Description Here>
  *
@@ -23,6 +23,34 @@
 
 #include <stdio.h>
 #include "stats.h"
+
+void sort_array(unsigned char * array, unsigned int length){
+  return 0;
+}
+
+unsigned char find_median(unsigned char * array, unsigned int length){
+  return 0;
+}
+
+float find_mean(unsigned char * array, unsigned int length){
+  return 0;
+}
+
+unsigned char find_maximum(unsigned char * array, unsigned int length){
+  return 0;
+}
+
+unsigned char find_minimum(unsigned char * array, unsigned int length){
+  return 0;
+}
+
+void print_array(unsigned char * array, unsigned int length){
+  return 0;
+}
+
+void print_statistics(unsigned char * array, unsigned int length){
+  return 0;
+}
 
 /* Size of the Data Set */
 #define SIZE (40)
@@ -37,7 +65,7 @@ void main() {
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
-
+  return 0;
 }
 
 /* Add other Implementation File Code Here */
